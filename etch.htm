@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Etch-a-Sketch</title>
+    <link rel="stylesheet" href="etch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex-cointainer">
+        <div id="heading">
+            <h1> ~ Etch-a-Sketch ~</h1>
+        </div>
+        <div class="mode"> Mode: Pen Off</div>
+        <div id="grid"></div>
+
+        <div id="btns">
+            <input type="color" id="picker" onclick="changeColor(this.value)" oninput="changeColor(this.value)">
+            <button id="eraser" onclick="changeColor('white')">Eraser</button>
+            <button id="random" onclick="changeColor('random')">Random</button>
+            <button id=" reset" class="resetbtn" onclick="resetGrid()">Reset</button>
+        </div>
+    </div>
+    <div id="sizeSetting">
+        <div>Set Size:</div><input type="range" max="100" min="2" id="size" onchange="changeSize(this.value)"><span
+            id="sizeText">50</span>
+    </div>
+
+    <script src="etch.js"></script>
+</body>
+
+</html>

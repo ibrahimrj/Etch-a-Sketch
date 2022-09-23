@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("https://wallpaperaccess.com/full/5354520.jpg") center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.75rem;
+    color: linear-gradient(#e66465, #9198e5);
+
+}
+
+#grid {
+    box-shadow: 5px 3px 3px 3px grey;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    margin-bottom: 20px;
+    border-left: 0.25px solid grey;
+}
+
+#btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1rem;
+    background: none;
+    border-radius: 25px;
+}
+
+#eraser {
+    font-weight: bold;
+    background: linear-gradient(rgb(195, 118, 131), rgb(42, 89, 151));
+    color: aliceblue;
+    border-color: grey;
+    ;
+}
+
+#random {
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    ;
+    font-weight: lighter;
+    font-family: 'Pacifico', cursive;
+}
+
+.resetbtn {
+    background: linear-gradient(0.25turn, #333, #ebf8e1, #f69d3c);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+}
+
+.mode {
+    font-family: 'Pacifico', cursive;
+}
+
+#sizeSetting {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    border: 2px solid#333;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: #ebf8e1;
+}
